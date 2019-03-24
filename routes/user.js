@@ -62,7 +62,7 @@ router.post('/user_create', (req, res) => {
       console.log("I think we fetched users successfully")
   
       const users = rows.map((row) => {
-        return { firstName : row.firstName, lastName : row.lastName }
+        return { firstName : row.first_name, lastName : row.last_name }
       })
   
       res.json(users)
