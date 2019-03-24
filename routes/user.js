@@ -48,7 +48,7 @@ router.post('/user_create', (req, res) => {
     console.log("Fetching user with id : " + req.params.id)
   
     const userID = req.params.id
-    const query = "SELECT * FROM User WHERE userID = ?"
+    const query = "SELECT * FROM Users WHERE userID = ?"
   
     const connection = getConnection()
   
@@ -76,7 +76,7 @@ router.post('/user_create', (req, res) => {
   router.get("/users", (req, res) => {
     const connection = getConnection() 
   
-    connection.query("SELECT * FROM User", (err, rows, fields) => {
+    connection.query("SELECT * FROM Users", (err, rows, fields) => {
       if (err) {
         console.log("There is an error")
       }
