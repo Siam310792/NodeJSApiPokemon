@@ -48,7 +48,7 @@ router.post('/user_create', (req, res) => {
     console.log("Fetching user with id : " + req.params.id)
   
     const userID = req.params.id
-    const query = "SELECT * FROM Users WHERE userID = ?"
+    const query = "SELECT * FROM Users WHERE id = ?"
   
     const connection = getConnection()
   
