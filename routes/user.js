@@ -10,9 +10,10 @@ router.get('/messages', (req, res) => {
 
 const pool = mysql.createPool({
     connectionLimit : 10,
-    host:'localhost',
-    user:'root', 
-    database:'AppPokeCards'
+    host:'us-cdbr-iron-east-03.cleardb.net',
+    user:'b563ebb074fddc', 
+    password:'58768aea',
+    database:'heroku_17896436139a2c1'
 })
 
 function getConnection() {
