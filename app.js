@@ -21,7 +21,8 @@ app.get("/", (request, response) => {
   response.send("Hello from rooooot")
 })
 
+const PORT = process.env.PORT || 3003
 // localhost:3003
-app.listen(3003, () => {
-  console.log("Server is up and listening on port 3003")
+app.listen(PORT, () => {
+  console.log("Server is up and listening on : " + PORT)
 })
