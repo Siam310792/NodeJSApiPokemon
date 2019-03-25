@@ -9,7 +9,7 @@ router.get('/messages', (req, res) => {
 })
 
 const pool = mysql.createPool({
-    connectionLimit : 10,
+    connectionLimit : 11,
     host:'us-cdbr-iron-east-03.cleardb.net',
     user:'b563ebb074fddc', 
     password:'58768aea',
