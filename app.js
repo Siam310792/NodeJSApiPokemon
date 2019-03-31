@@ -13,6 +13,8 @@ app.use(express.static('./public'))
 app.use(morgan('short'))
 
 const router = require('./routes/user.js')
+const router = require('./routes/cards.js')
+const router = require('./routes/usercard.js')
 
 app.use(router)
 
